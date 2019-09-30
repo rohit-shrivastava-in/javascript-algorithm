@@ -1,8 +1,8 @@
 function Reverse(str){
-    const arr = []
-    for(let i = str.length; i >= 0; i--){
-        arr.push(str[i])
+    var newStr = ''
+    for(let i = str.length - 1; i >= 0; i--){
+        newStr = newStr.concat(str[i])
     }
-    return arr.join('')
+    return newStr
 }
 console.log(Reverse("Rohit Shrivastava"))
